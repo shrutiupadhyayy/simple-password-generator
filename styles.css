@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500;700&family=Dosis:wght@200&family=JetBrains+Mono:ital,wght@1,100&family=Lato:wght@100&family=Luxurious+Roman&family=Roboto:wght@100;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+ body {
+     background-color: #113157;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1rem;
+     font-family: "Poppins", sans-serif;
+ }
+
+ .pw-container {
+     background-color: #113157;
+     width: 400px;
+ }
+  
+.pw-header {
+    padding: 1rem;
+}
+
+.pw {
+    background-color: #134074;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.pw button {
+    background-color: #3fc1c9;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight:  bold;
+    padding: 0.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(0,20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+
+.pw-body {
+    padding: 1rem 1rem 1rem ;
+}
+
+.form-control {
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generate {
+    background-color: #ecb602;
+    border: none;
+    color: black;
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.generate:hover {
+  background-image: linear-gradient(-180deg, #b9ad05 0%, #ffc506 100%);
+}
+
+@media (min-width: 768px) {
+  .generate {
+    padding: 1rem 2rem;
+  }
+}
